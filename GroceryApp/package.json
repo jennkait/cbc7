@@ -1,0 +1,11 @@
+{
+  "name": "groceryapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "groceryapp.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

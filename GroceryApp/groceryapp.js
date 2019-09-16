@@ -13,39 +13,23 @@ function fillArray() {
  }
 
  fillArray();
+
+
  function addInventory(itemName, quantity) {
-    if(!quantity){
-       return console.log("Please specify a quantity")
-    }
-    if(!inventory[itemName]){
-       return console.log("That item is not available")
-    }
-    if (inventory[itemName] < quantity){
-       return console.log("We only have" + inventory[itemName] + "not", quantity)
-    }
-    inventory[itemName] = inventory[itemName] + quantity;
+    inventory[itemName] += quantity;
  }
 
  addInventory("water",100)
 
  function subtractInventory(itemName, quantity){
-   if(!quantity){
-      return console.log("Please specify a quantity")
-   }
-   if(!inventory[itemName]){
-      return console.log("That item is not available")
-   }
-   if (inventory[itemName] < quantity){
-      return console.log("We only have" + inventory[itemName] + "not", quantity)
-   }
-     inventory[itemName] = inventory[itemName] - quantity;
+     inventory[itemName] -= quantity;
  }
  subtractInventory("soda",100)
 
  function outOfStock(){
     for (let item in inventory) {
     if(inventory[itemName] === 0) {
-      console.log([itemName] + "is out of stock")
+      console.log([itemName] + "is out of stock");
       }
     }
  }
