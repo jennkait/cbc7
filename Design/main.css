@@ -1,0 +1,30 @@
+body {
+    background-color: #EFB8FF;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+#button1: {
+    background-color: #BDABFF;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+#button2: {
+    background-color: #E89BE3;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+#button3 {
+    background-color: #BDABFF;
+    color: white;
+}
