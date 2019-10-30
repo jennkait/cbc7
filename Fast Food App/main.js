@@ -1,7 +1,6 @@
 var orderInput = document.getElementById('order-input');
 var menuList = document.getElementById('menu-list');
-// var customerOrder;
-var menu = {"fries": 20, "hamburgers": 10, "shakes": 5 }
+var menu = {"Fries": 20, "Hamburgers": 10, "Shakes": 5 }
 
 function setMenu() {
     var menuString = '';
