@@ -1,6 +1,6 @@
 var orderInput = document.getElementById('order-input');
 var menuList = document.getElementById('menu-list');
-var menu = {"Fries": 20, "Hamburgers": 10, "Shakes": 5 }
+var menu = {"fries": 20, "hamburgers": 10, "shakes": 5 }
 
 function setMenu() {
     var menuString = '';
@@ -39,6 +39,9 @@ function placeOrder(){
             // item is in stock
             menu[name] = menu[name] - quantity;
             console.log(`Purchased ${quantity} ${name}`);
+            submitOrder({
+                name:quantity
+            });
         }
         orderInput.value = '';
         setMenu();
@@ -46,13 +49,13 @@ function placeOrder(){
 }
 setMenu();
  
-function loadDoc() {
+function submitOrder(order) {
     var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("demo").innerHTML = this.responseText;
+     console.log(this.responseText);
     }
  };
-xhttp.open("POST", "demo_post.asp", true);
+xhttp.open("POST", "http://localhost:8080/send-order", order);
 xhttp.send();
 }
