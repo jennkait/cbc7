@@ -7,4 +7,4 @@ function spliceNslice(arr1, arr2, n) {
   return combinedArrays
 }
 
-spliceNslice([1, 2, 3], [4, 5, 6], 1);
+spliceNslice([11, 12, 13], [14, 15, 16], 1);
