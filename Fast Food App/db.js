@@ -11,3 +11,7 @@ connection.connect(function(err) {
 });
 
 module.exports = connection;
+
+function get_all_inventory()
+
+function set_new_item()
